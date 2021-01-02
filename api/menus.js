@@ -147,4 +147,7 @@ menuRouter.delete("/:menuId", (req, res, next) => {
   }
 });
 
+const menuItemsRouter = require("./menuItems");
+menuRouter.use("/:menuId/menu-items", menuItemsRouter);
+
 module.exports = menuRouter;
