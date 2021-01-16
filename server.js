@@ -23,4 +23,6 @@ const apiRouter = require("./api/api");
 
 app.use("/api", apiRouter);
 
+app.use(express.static("public"));
+
 module.exports = app;
